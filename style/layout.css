@@ -1,0 +1,13 @@
+li:hover {
+  font-size: 1.1em;
+  cursor: pointer;
+  color: #B7D4DA;
+  margin-left: 3%;
+}
+
+.selected {
+  margin-left: 3%;
+  color: #B7D4DA;
+  font-size: 1.1em;
+  list-style-type: circle;
+}

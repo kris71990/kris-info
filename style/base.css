@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #476B71;
+  color: white;
+  letter-spacing: 0.2em;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  padding: 0;
+  margin: 1% 5%;
+}
+
+.content {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+header {
+  line-height: 2em;
+  font-style: italic;
+  border: 2px solid black;
+}
+
+footer {
+  border: 2px solid black;
+  flex-shrink: 0;
+  text-align: center;
+}
