@@ -1,13 +1,15 @@
-li:hover {
-  font-size: 1.1em;
-  cursor: pointer;
+a:hover {
+  font-weight: bold;
   color: #B7D4DA;
-  margin-left: 3%;
+  cursor: pointer;
 }
 
 .selected {
-  margin-left: 3%;
+  font-weight: bold;
+  margin-left: 1%;
   color: #B7D4DA;
-  font-size: 1.1em;
-  list-style-type: circle;
+}
+
+.selected a {
+  border-bottom: 2px solid #B7D4DA;
 }

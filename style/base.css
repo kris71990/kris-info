@@ -15,7 +15,7 @@ ul {
   margin: 1% 5%;
 }
 
-.content {
+main {
   flex: 1 0 auto;
   text-align: center;
 }

@@ -1,7 +1,7 @@
 document.addEventListener('click', function(e) {
-  if (e.target.localName !== 'span') return;
+  if (e.target.localName !== 'a') return;
 
-  var elementsLi = document.getElementsByTagName('span');
+  var elementsLi = document.getElementsByTagName('a');
 
   for (var i = 0; i < elementsLi.length; i++) {
     if (elementsLi[i] === e.target) {
