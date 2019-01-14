@@ -10,20 +10,34 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style/layout.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="style/index.css"/>
   </head>
-  <body>
+  <body id="body">
     <header>
-      <ul>
-        <li id="home"><a>Home</a></li>
-        <li id="about"><a>About Me</a></li>
-        <li id="skills"><a>Skills</a></li>
-        <li id="projects"><a>Projects</a></li>
-        <li id="contact"><a>Contact</a></li>
-      </ul>
+      <nav>
+        <ul>
+          <li id="home"><a>Home</a></li>
+          <li id="about"><a>About Me</a></li>
+          <li id="skills"><a>Skills</a></li>
+          <li id="projects"><a>Projects</a></li>
+          <li id="contact"><a>Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <div class="content">
+    <main id="content">
+      <section class="visible">
         <h1>Kris Sakarias</h1>
-      </div>
+      </section>
+      <section class="hidden">
+        <h1>About</h1>
+      </section>
+      <section class="hidden">
+        <h1>Skills</h1>
+      </section>
+      <section class="hidden">
+        <h1>Projects</h1>
+      </section>
+      <section class="hidden">
+        <h1>Contact</h1>
+      </section>
     </main>
     <footer>
       <p>&copy 2019 - Kris</p>

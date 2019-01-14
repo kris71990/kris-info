@@ -13,3 +13,11 @@ a:hover {
 .selected a {
   border-bottom: 2px solid #B7D4DA;
 }
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}

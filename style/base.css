@@ -16,6 +16,8 @@ ul {
 }
 
 main {
+  background-color: #64969F;
+  color: black;
   flex: 1 0 auto;
   text-align: center;
 }
@@ -23,11 +25,11 @@ main {
 header {
   line-height: 2em;
   font-style: italic;
-  border: 2px solid black;
+  border-bottom: 5px double #B7D4DA;
 }
 
 footer {
-  border: 2px solid black;
+  border-top: 5px double #B7D4DA;
   flex-shrink: 0;
   text-align: center;
 }
