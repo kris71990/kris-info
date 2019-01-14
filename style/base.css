@@ -10,11 +10,6 @@ body {
   flex-direction: column;
 }
 
-ul {
-  padding: 0;
-  margin: 1% 5%;
-}
-
 main {
   background-color: #64969F;
   color: black;
@@ -28,8 +23,33 @@ header {
   border-bottom: 5px double #B7D4DA;
 }
 
+nav {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+  direction: row;
+}
+
+.icons {
+  width: 50%;
+  text-align: right;
+}
+
+.icons p {
+  margin: 1% 5%;
+}
+
+.icons span {
+  vertical-align: middle;
+  font-size: 1.3em;
+  margin-left: 1%;
+}
+
 footer {
   border-top: 5px double #B7D4DA;
   flex-shrink: 0;
   text-align: center;
+  font-style: italic;
 }
