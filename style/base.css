@@ -3,23 +3,35 @@ html, body {
 }
 
 body {
-  background-color: #476B71;
-  color: white;
-  letter-spacing: 0.2em;
   display: flex;
   flex-direction: column;
 }
 
 main {
   background-color: #64969F;
-  color: black;
+  /* font-weight: bold;
+  font-style: italic; */
+  font-size: 1.2em;
   flex: 1 0 auto;
   text-align: center;
+  font-family: 'ZCOOL XiaoWei', serif;
 }
 
+/*
+font-family: 'Roboto Mono', monospace;
+font-family: 'EB Garamond', serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'ZCOOL XiaoWei', serif;
+*/
+
 header {
+  background-color: #476B71;
+  color: white;
   line-height: 2em;
   font-style: italic;
+  letter-spacing: 0.2em;
   border-bottom: 5px double #B7D4DA;
 }
 
@@ -54,6 +66,7 @@ nav p {
 
 footer {
   border-top: 5px double #B7D4DA;
+  background-color: #476B71;
   flex-shrink: 0;
   text-align: center;
   font-style: italic;

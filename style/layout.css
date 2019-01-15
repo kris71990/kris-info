@@ -41,6 +41,10 @@ a:hover {
   display: block;
 }
 
+header .container {
+  margin: 1%;
+}
+
 main .container {
   width: 100%;
   flex-wrap: wrap;
@@ -48,9 +52,9 @@ main .container {
 }
 
 .skill-box {
-  width: 100%;
-  height: 250px;
-  margin: 2% 4%;
+  width: 80%;
+  margin: 2% auto;
+  padding: 2%;
   background-color: #6297A5;
   border: 5px double #B7D4DA;
 }
@@ -63,9 +67,8 @@ main .container {
   margin: 5px;
 }
 
-
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 600px) {
   .skill-box {
-    width: 40%;
+    width: 80%;
   }
-}
+} */
