@@ -70,4 +70,5 @@ footer {
   flex-shrink: 0;
   text-align: center;
   font-style: italic;
+  height: 50px;
 }
