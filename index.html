@@ -14,7 +14,7 @@
   <body id="body">
     <header>
       <div class="container">
-        <nav>
+        <nav id="nav">
           <ul>
             <li id="home"><a>Home</a></li>
             <li id="about"><a>About Me</a></li>
@@ -41,6 +41,14 @@
       </section>
       <section class="hidden">
         <div class="container">
+          <div class="about">
+            <h1>About Me</h1>
+            <div>
+              <p>Kris is a full-stack software developer living in Seattle, Washington.</p>
+              <p>He specializes in web development and Javascript, and has experience working throughout the stack developing engaging and practical applications.</p> 
+              <p>Driven by a love of code and a desire to create benevolent tech that improves lives, Kris remains on the cutting edge of the industry always on the lookout for the next big thing.</p>
+            </div>
+          </div>
           <div class="education">
             <div class="container">
               <div><h4>Certificate</h4></div>
@@ -53,14 +61,6 @@
             <div class="container">
               <div><h4>Bachelors</h4></div>
               <p><span>University of Washington</span></br>Seattle, WA</br>B.A. History</p>
-            </div>
-          </div>
-          <div class="about">
-            <h1>About Me</h1>
-            <div>
-              <p>Kris is a full-stack software developer living in Seattle, Washington.</p>
-              <p>He specializes in web development and Javascript, and has experience working throughout the stack developing engaging and practical applications.</p> 
-              <p>Driven by a love of code and a desire to create benevolent tech that improves lives, Kris remains on the cutting edge of the industry always on the lookout for the next big thing.</p>
             </div>
           </div>
         </div>
@@ -120,21 +120,42 @@
       </section>
       <section class="hidden">
         <h1>Projects</h1>
-        <div class="project-box">
+        <ul id="language-selection">
+          <li><a>Javascript</a></li>
+          <li><a>Python</a></li>
+          <li><a>C/C++</a></li>
+        </ul>
+        <div class="javascript">
+          <div class="project-box">
+            <h4>The World Right Now</h4>
+            <p>Javascript/ES6, Node, Express, React/Redux</p>
+            <p>Learn economic, political, and general information about the countries in the world.</p>
+            <a href="http://www.theworldrightnow.info/" target="_blank">Live</a>
+            <a href="https://github.com/kris71990/the_world_right_now">Github</a>
+          </div>
+          <div class="project-box">
+            <h4>Explore American Public Lands</h4>
+            <p>Javascript/ES6, Node, Express, Vue, VueX</p>
+            <p>Discover a national park to visit, and contribute your experiences to help others discover new places.</p>
+            <a href="https://github.com/kris71990/nps-find" target="_blank">Github</a>
+          </div>
+          <div class="project-box">
+            
+          </div>
+          <div class="project-box">
+            
+          </div>
+        </div> 
+        <div class="python">
+          <div class="project-box">
+            <h4>Washington Weather Bot</h4>
+            <p>Python, Twitter</p>
+            <p>A Twitter bot that tweets weather reports for locations across Washington State.</p>
+            <a href="https://twitter.com/WAweatherbot" target="_blank">Link</a>
+            <a href="https://github.com/kris71990/WAweatherbot" target="_blank">Github</a>
+          </div>
+        </div>
 
-        </div>
-        <div class="project-box">
-          
-        </div>
-        <div class="project-box">
-          
-        </div>
-        <div class="project-box">
-          
-        </div>
-      </section>
-      <section class="hidden">
-        <h1>Contact</h1>
       </section>
     </main>
     <footer>

@@ -124,6 +124,12 @@ main .container {
   margin: 0 auto;
 }
 
+#language-selection li {
+  display: inline;
+  margin: 3%;
+  border-bottom: 2px solid black;
+}
+
 @media only screen and (min-width: 800px) {
   .education {
     width: 40%;
@@ -132,6 +138,7 @@ main .container {
 
   .about {
     width: 60%;
+    padding-top: 20px;
   }
   
   .education .container div {
