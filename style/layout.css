@@ -127,7 +127,21 @@ main .container {
 #language-selection li {
   display: inline;
   margin: 3%;
-  border-bottom: 2px solid black;
+}
+
+#project-view {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.project-box {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.project-box p {
+  margin: 0;
 }
 
 @media only screen and (min-width: 800px) {
@@ -153,5 +167,16 @@ main .container {
     line-height: 2em;
     margin: 2%;
     padding-left: 6%;
+  }
+
+  .javascript, .python, .c {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+  }
+
+  .project-box {
+    width: 20%;
+    margin: 2%;
   }
 }

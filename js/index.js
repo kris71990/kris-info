@@ -28,14 +28,22 @@ langMenu.addEventListener('click', function(e) {
   var langChoicesLi = document.querySelectorAll('#language-selection li');
   var langDivs = document.querySelectorAll('section.visible > div');
 
+  if (targetLang === 'c/c++') targetLang = 'c';
+  console.log(targetLang);
+
   for (var j = 0; j < langDivs.length; j++) {
-    langDivs[j].className = langChoicesA[j].textContent.toLowerCase();
+    if (langChoicesA[j].textContent === 'C/C++') {
+      langDivs[j].className = 'c';
+    } else {
+      langDivs[j].className = langChoicesA[j].textContent.toLowerCase();
+    }
+
     if (langDivs[j].className !== targetLang) {
       langChoicesLi[j].className = '';
       langDivs[j].className = 'hidden';
     } else {
       langChoicesLi[j].className = 'selected';
-      langDivs[j].className = targetLang;
+      langDivs[j].className += ' visible';
     }
   }
 }, false);
