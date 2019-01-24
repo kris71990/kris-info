@@ -9,8 +9,6 @@ body {
 
 main {
   background-color: #64969F;
-  /* font-weight: bold;
-  font-style: italic; */
   font-size: 1.2em;
   flex: 1 0 auto;
   text-align: center;

@@ -24,25 +24,33 @@ langMenu.addEventListener('click', function(e) {
   if (e.target.localName !== 'a') return;
 
   var targetLang = e.target.textContent.toLowerCase();
+
   var langChoicesA = document.querySelectorAll('#language-selection a');
   var langChoicesLi = document.querySelectorAll('#language-selection li');
-  var langDivs = document.querySelectorAll('section.visible > div');
+  var langDivs = document.querySelectorAll('#project-view > div');
 
   if (targetLang === 'c/c++') targetLang = 'c';
-  console.log(targetLang);
 
   for (var j = 0; j < langDivs.length; j++) {
-    if (langChoicesA[j].textContent === 'C/C++') {
+    if (langChoicesA[j + 1].textContent === 'C/C++') {
       langDivs[j].className = 'c';
     } else {
-      langDivs[j].className = langChoicesA[j].textContent.toLowerCase();
+      langDivs[j].className = langChoicesA[j + 1].textContent.toLowerCase();
+    }
+
+    if (targetLang === 'all') {
+      langChoicesLi[0].className = 'selected';
+      langChoicesLi[j + 1].className = '';
+      langDivs[j].className += ' visible';
+      continue;
     }
 
     if (langDivs[j].className !== targetLang) {
-      langChoicesLi[j].className = '';
+      langChoicesLi[j + 1].className = '';
       langDivs[j].className = 'hidden';
     } else {
-      langChoicesLi[j].className = 'selected';
+      langChoicesLi[0].className = '';
+      langChoicesLi[j + 1].className = 'selected';
       langDivs[j].className += ' visible';
     }
   }

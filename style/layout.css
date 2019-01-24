@@ -85,7 +85,7 @@ main .container {
   border-right: 1px solid #B7D4DA;
   border-left: 1px solid #B7D4DA;
   box-sizing: border-box;
-  background-color: #055172;
+  background-color: #3B6E85;
 }
 
 .education .container div {
@@ -132,16 +132,32 @@ main .container {
 #project-view {
   width: 90%;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 5px double #B7D4DA;
+  background-color: #3B6E85;
+  letter-spacing: 0.01em;
 }
 
 .project-box {
   width: 95%;
-  margin: 0 auto;
+  margin: 0;
+  padding: 2% 2% 10% 2%;
+  text-align: left;
+  position: relative;
+  border-bottom: 1px dashed #B7D4DA;
 }
 
 .project-box p {
   margin: 0;
+}
+
+.project-box div {
+  position: absolute;
+  bottom: 0;
+}
+
+.project-box div a {
+  margin-right: 10px;
+  font-size: 75%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -173,10 +189,15 @@ main .container {
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .python .project-box, .c .project-box {
+    width: 30%;
   }
 
   .project-box {
     width: 20%;
-    margin: 2%;
+    padding: 2% 2% 5% 2%;
   }
 }
