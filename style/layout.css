@@ -42,6 +42,11 @@ a:hover {
   border-bottom: 2px solid #B7D4DA;
 }
 
+.homepage img {
+  width: 15%;
+  border-radius: 50%;
+}
+
 .hidden {
   display: none;
 }
@@ -71,10 +76,12 @@ main .container {
 }
 
 .skill-box h3 {
+  font-family: 'Bree Serif', serif;
   text-decoration: underline;
 }
 
 .skill-box li {
+  font-family: 'Slabo 27px', serif;
   margin: 5px;
 }
 
@@ -125,13 +132,14 @@ main .container {
 }
 
 #language-selection li {
+  font-family: 'Slabo 27px', serif;
   display: inline;
   margin: 3%;
 }
 
 #project-view {
   width: 90%;
-  margin: 0 auto;
+  margin: 2% auto;
   border: 5px double #B7D4DA;
   background-color: #3B6E85;
   letter-spacing: 0.01em;
@@ -139,20 +147,58 @@ main .container {
 
 .project-box {
   width: 95%;
-  margin: 0;
+  margin: 0 auto;
   padding: 2% 2% 10% 2%;
   text-align: left;
   position: relative;
   border-bottom: 1px dashed #B7D4DA;
 }
 
+.project-box:nth-child(2n) {
+  background-color: #518D93;
+}
+
+.project-box:nth-child(2n + 1) {
+  background-color: #2B7981;
+}
+
+.c .project-box {
+  background-color: #518D93;
+}
+
+#project-view .visible:last-child .project-box:last-child {
+  border-bottom: 0;
+}
+
+.project-box h4 {
+  font-family: 'Bree Serif', serif;
+  text-decoration: underline;
+  color: #022956;
+}
+
+.project-box h5 {
+  font-family: 'Slabo 27px', serif;
+  font-style: oblique;
+}
+
+/*
+font-family: 'Roboto Mono', monospace;
+font-family: 'EB Garamond', serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Merriweather', serif;
+font-family: 'Slabo 27px', serif;
+font-family: 'ZCOOL XiaoWei', serif;
+*/
+
 .project-box p {
+  font-family: 'Slabo 27px', serif;
   margin: 0;
+  padding: 1% 2% 3% 2%;
 }
 
 .project-box div {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 }
 
 .project-box div a {
@@ -167,8 +213,13 @@ main .container {
   }
 
   .about {
+    line-height: 1.5em;
     width: 60%;
     padding-top: 20px;
+  }
+
+  .about h1 {
+    margin-bottom: 8%;
   }
   
   .education .container div {
@@ -180,7 +231,7 @@ main .container {
   .education .container p {
     width: 50%;
     text-align: left;
-    line-height: 2em;
+    line-height: 2.5em;
     margin: 2%;
     padding-left: 6%;
   }
@@ -194,10 +245,54 @@ main .container {
 
   .python .project-box, .c .project-box {
     width: 30%;
+    border: 1px dashed #B7D4DA;
+    margin: 1%;
   }
 
   .project-box {
     width: 20%;
-    padding: 2% 2% 5% 2%;
+    padding: 0 2% 4% 2%;
+    border-right: 1px dashed #B7D4DA;
+    border-left: 1px dashed #B7D4DA;
+  }
+
+  .javascript div:nth-child(4n) {
+    border-right: 0;
+  }
+
+  .javascript div:nth-child(4n-3) {
+    border-left: 0;
+  }
+
+  .javascript div:nth-child(n + 5) {
+    border-bottom: 0;
+  }
+
+  .project-box:nth-child(2n) { 
+    background-color: #518D93;
+  }
+  
+  .project-box:nth-child(2n + 1) {
+    background-color: #2B7981;
+  }
+
+  .project-box:nth-child(2n + 5){
+    background-color: #518D93;;
+  }
+
+  .project-box:nth-child(2n + 6) {
+    background-color: #2B7981;
+  }
+  
+  .c .project-box {
+    background-color: #518D93;
+  }
+
+  #project-view .visible:last-child .project-box:last-child {
+    border-bottom: 1px dashed #B7D4DA;
+  }
+
+  .project-box p {
+    padding-bottom: 2%;
   }
 }
