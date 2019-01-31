@@ -1,6 +1,6 @@
 # Kris Info
 
-Static webpage displaying information about Kris Sakarias, his portfolio and projects.
+Static webpage displaying information about Kris Sakarias, his portfolio and projects. It is live at www.ksakarias.com.
 
 ## Site Map
 
