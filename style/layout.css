@@ -27,7 +27,6 @@ a {
 }
 
 a:hover {
-  font-weight: bold;
   color: #B7D4DA;
   cursor: pointer;
 }
