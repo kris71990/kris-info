@@ -27,6 +27,7 @@ a {
 }
 
 a:hover {
+  font-weight: bold;
   color: #B7D4DA;
   cursor: pointer;
 }
@@ -144,29 +145,18 @@ main .container {
   letter-spacing: 0.01em;
 }
 
+.javascript, .python, .c {
+  display: flex;
+  flex-direction: column; 
+}
+
 .project-box {
   width: 95%;
   margin: 0 auto;
   padding: 2% 2% 10% 2%;
   text-align: left;
   position: relative;
-  border-bottom: 1px dashed #B7D4DA;
-}
-
-.project-box:nth-child(2n) {
-  background-color: #518D93;
-}
-
-.project-box:nth-child(2n + 1) {
-  background-color: #2B7981;
-}
-
-.c .project-box {
-  background-color: #518D93;
-}
-
-#project-view .visible:last-child .project-box:last-child {
-  border-bottom: 0;
+  border-bottom: 2px dashed #B7D4DA;
 }
 
 .project-box h4 {
@@ -179,15 +169,6 @@ main .container {
   font-family: 'Slabo 27px', serif;
   font-style: oblique;
 }
-
-/*
-font-family: 'Roboto Mono', monospace;
-font-family: 'EB Garamond', serif;
-font-family: 'Bree Serif', serif;
-font-family: 'Merriweather', serif;
-font-family: 'Slabo 27px', serif;
-font-family: 'ZCOOL XiaoWei', serif;
-*/
 
 .project-box p {
   font-family: 'Slabo 27px', serif;
@@ -203,6 +184,35 @@ font-family: 'ZCOOL XiaoWei', serif;
 .project-box div a {
   margin-right: 10px;
   font-size: 75%;
+}
+
+@media only screen and (max-width: 800px) {
+  .javascript .project-box:nth-child(2n) {
+    background-color: #518D93;
+  }
+  
+  .javascript .project-box:nth-child(2n + 1) {
+    background-color: #2B7981;
+  }
+  
+  .python .project-box:nth-child(n) {
+    background-color: #518D93;
+  }
+  
+  .python .project-box:nth-child(2n) {
+    background-color: #2B7981;
+  }
+  
+  .c .project-box {
+    background-color: #518D93;
+  }
+
+  .c .project-box:last-child {
+    border-bottom: none;
+  }
+  #project-view .visible .project-box:last-child {
+    border-bottom: none;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -246,53 +256,20 @@ font-family: 'ZCOOL XiaoWei', serif;
     justify-content: center;
   }
 
+  .javascript .project-box {
+    margin: 3px;
+  }
+
   .python .project-box, .c .project-box {
     width: 30%;
-    border: 1px dashed #B7D4DA;
-    margin: 1%;
+    margin: 5px;
   }
 
   .project-box {
     width: 20%;
     padding: 0 2% 4% 2%;
-    border-right: 1px dashed #B7D4DA;
-    border-left: 1px dashed #B7D4DA;
-  }
-
-  .javascript div:nth-child(4n) {
-    border-right: 0;
-  }
-
-  .javascript div:nth-child(4n-3) {
-    border-left: 0;
-  }
-
-  .javascript div:nth-child(n + 5) {
-    border-bottom: 0;
-  }
-
-  .project-box:nth-child(2n) { 
-    background-color: #518D93;
-  }
-  
-  .project-box:nth-child(2n + 1) {
+    border: 1px dashed #B7D4DA;
     background-color: #2B7981;
-  }
-
-  .project-box:nth-child(2n + 5){
-    background-color: #518D93;;
-  }
-
-  .project-box:nth-child(2n + 6) {
-    background-color: #2B7981;
-  }
-  
-  .c .project-box {
-    background-color: #518D93;
-  }
-
-  #project-view .visible:last-child .project-box:last-child {
-    border-bottom: 1px dashed #B7D4DA;
   }
 
   .project-box p {
