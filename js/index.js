@@ -29,9 +29,7 @@
     for (var i = 0; i < elementsHeaderLi.length; i++) {
       if (elementsHeaderLi[i] === e.target) {
         e.target.parentNode.className = 'selected';
-        elementsMainSection[i].className = 'visible';
-  
-        
+        elementsMainSection[i].className = 'visible';        
       } else {
         elementsHeaderLi[i].parentNode.className = '';
         elementsMainSection[i].className = 'hidden';
