@@ -202,8 +202,12 @@ main .container {
     background-color: #2B7981;
   }
   
-  .c .project-box {
+  .c .project-box:nth-child(n) {
     background-color: #518D93;
+  }
+
+  .c .project-box:nth-child(2n) {
+    background-color: #2B7981;
   }
 
   .c .project-box:last-child {
