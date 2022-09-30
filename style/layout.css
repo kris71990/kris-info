@@ -10,12 +10,7 @@
 ul {
   padding: 0;
   margin: 1% 5%;
-}
-
-nav li {
-  padding-left: 1%;
-  list-style: none;
-}
+}å
 
 main li {
   list-style: none;
@@ -32,17 +27,24 @@ a:hover {
 }
 
 .selected a {
-  font-weight: bold;
-  margin-left: 1%;
   color: #B7D4DA;
-}
-
-.selected a {
   border-bottom: 2px solid #B7D4DA;
 }
 
+#subtitle {
+  margin: 3%;
+}
+
+.homepage h1 {
+  margin: 3%;
+}
+
+.homepage #subtitle * {
+  margin: 5px;
+}
+
 .homepage img {
-  width: 30%;
+  width: 35%;
   border-radius: 50%;
 }
 
@@ -68,10 +70,10 @@ main .container {
 
 .skill-box {
   width: 80%;
-  margin: 2% auto;
-  padding: 2%;
-  background-color: #6297A5;
-  border: 5px double #B7D4DA;
+  margin: 1% auto;
+  /* padding: 2%; */
+  background-color: #3B6E85;
+  /* border: 5px double #B7D4DA; */
 }
 
 .skill-box h3 {
@@ -88,17 +90,17 @@ main .container {
   width: 90%;
   height: 100%;
   margin: 2% auto;
-  border-right: 1px solid #B7D4DA;
-  border-left: 1px solid #B7D4DA;
-  box-sizing: border-box;
+}
+
+.education .container {
   background-color: #3B6E85;
+  margin-top: 2px;
 }
 
 .education .container div {
   width: 100%;
   padding: 0 3%;
-  border-top: 5px double #B7D4DA;
-  border-bottom: 3px double #B7D4DA;
+  border-bottom: 2px solid #B7D4DA;
 }
 
 .education .container div h4 {
@@ -108,13 +110,16 @@ main .container {
 .education .container p {
   width: 100%;
   text-align: center;
-  font-style: italic;
   line-height: 1.5em;
 }
 
-.education .container span {
+.education .container #school {
   font-style: normal;
   font-weight: bold;
+}
+
+.education .container #major {
+  font-style: italic;
 }
 
 .about {
@@ -122,6 +127,7 @@ main .container {
 }
 
 .about h1 {
+  text-align: center;
   padding-left: 2%;
 }
 
@@ -218,7 +224,7 @@ main .container {
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
   .homepage img {
     width: 15%;
   }
@@ -230,24 +236,24 @@ main .container {
 
   .about {
     line-height: 1.5em;
-    width: 60%;
+    width: 55%;
     padding-top: 20px;
   }
 
   .about h1 {
-    margin-bottom: 8%;
+    text-align: left;
+    margin-bottom: 50px;
   }
   
   .education .container div {
-    width: 100px;
-    border-right: 2px double #B7D4DA;
-    border-top: 0;
+    width: 100%;
+    border-bottom: 2px solid #B7D4DA;
   }
 
   .education .container p {
-    width: 50%;
+    width: 100%;
     text-align: left;
-    line-height: 2.5em;
+    line-height: 2em;
     margin: 2%;
     padding-left: 6%;
   }

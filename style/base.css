@@ -9,10 +9,10 @@ body {
 
 main {
   background-color: #64969F;
-  font-size: 1.2em;
   flex: 1 0 auto;
   text-align: center;
-  font-family: 'ZCOOL XiaoWei', serif;
+  font-family: 'Merriweather', serif;
+  padding-top: 50px;
 }
 
 /*
@@ -27,14 +27,25 @@ font-family: 'ZCOOL XiaoWei', serif;
 header {
   background-color: #476B71;
   color: white;
-  line-height: 2em;
-  font-style: italic;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
+  padding-bottom: 10px;
   border-bottom: 5px double #B7D4DA;
 }
 
 nav {
-  width: 50%;
+  line-height: 1.2em;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  align-self: flex-end;
+  padding-right: 10px;
 }
 
 nav p {
@@ -49,6 +60,7 @@ nav p {
 .icons {
   width: 50%;
   text-align: right;
+  font-style: italic;
   letter-spacing: 0.1em;
 }
 
@@ -60,13 +72,4 @@ nav p {
   vertical-align: middle;
   font-size: 1.3em;
   margin-left: 1%;
-}
-
-footer {
-  border-top: 5px double #B7D4DA;
-  background-color: #476B71;
-  flex-shrink: 0;
-  text-align: center;
-  font-style: italic;
-  height: 50px;
 }

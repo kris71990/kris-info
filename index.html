@@ -18,7 +18,7 @@
           <ul>
             <li id="home"><a>Home</a></li>
             <li id="about"><a>About Me</a></li>
-            <li id="skills"><a>Skills</a></li>
+            <li id="skills"><a>Experience</a></li>
             <li id="projects"><a>Projects</a></li>
           </ul>
         </nav>
@@ -27,7 +27,7 @@
             <a href="https://github.com/kris71990" target="_blank"><span class="icon-github"></span></a>
             <a href="https://www.linkedin.com/in/kris-sakarias/" target="_blank"><span class="icon-linkedin"></span></a>
           </p>
-          <p>Contact - <a href="mailto:ksakarias@gmail.com"><span class="icon-envelop"></span></a></p>
+          <p>Contact <a href="mailto:ksakarias@gmail.com"><span class="icon-envelop"></span></a></p>
         </div>
       </div>
     </header>
@@ -36,8 +36,10 @@
         <div class="homepage">
           <h1>Kris Sakarias</h1>
           <img src="/assets/home-photo.JPG" alt="Kris Sakarias"/>
-          <h2>Full-Stack Software Developer</h2>
-          <h4>Seattle, Washington</h4>
+          <div id="subtitle">
+            <h2>Software Engineer</h2>
+            <h4>Seattle, Washington</h4>
+          </div>
         </div>
       </section>
       <section class="hidden">
@@ -45,41 +47,56 @@
           <div class="about">
             <h1>About Me</h1>
             <div>
-              <p>Kris is a full-stack software developer in Seattle, Washington.</p>
-              <p>He specializes in web development, <strong><em>Javascript</em></strong>, <strong><em>Node</em></strong>, and <strong><em>React</em></strong>, and has experience working throughout the stack developing engaging and practical applications.</p> 
-              <p>Kris is driven by a love of code and a passion for solving meaningful problems.</p>
+              <p>Kris is a full-stack software engineer in Seattle, Washington.</p>
+              <p>He specializes in web development, working throughout the stack in
+                <strong><em>Javascript</em></strong>, <strong><em>Node</em></strong>, <strong><em>React</em></strong>, and <strong><em>Python</em></strong>
+                to develop engaging and practical web applications.
+              </p> 
+              <p>Kris is driven by a love of code and a passion for solving meaningful problems. He is also active in the open-source community.</p>
               <p id="links">Check out his <a>areas of expertise</a> and <a>projects</a>.</p>
-              <p>In his free time, Kris loves to read, play tennis, travel, and hang around outdoors in the Pacific Northwest.</p>
+              <p>In his free time, Kris enjoys reading, playing tennis, and hanging around outdoors in the Pacific Northwest.</p>
             </div>
           </div>
           <div class="education">
             <div class="container">
-              <div><h4>Certificate</h4></div>
-              <p><span>Code Fellows</span></br>Seattle, WA</br>Full-Stack Javascript</p>
+              <div><h4>Professional Certificate</h4></div>
+              <p>
+                <span id="school">Code Fellows</span></br>
+                Seattle, WA</br>
+                <span id="major">Full-Stack Software Development</span>
+              </p>
             </div>
             <div class="container">
-              <div><h4>Masters</h4></div>
-              <p><span>University College London</span></br>London, UK</br>M.A. International Relations</p>
+              <div><h4>Master's (M.A.)</h4></div>
+              <p>
+                <span id="school">University College London</span></br>
+                London, UK</br>
+                <span id="major">M.A. International Relations</span>
+              </p>
             </div>
             <div class="container">
-              <div><h4>Bachelors</h4></div>
-              <p><span>University of Washington</span></br>Seattle, WA</br>B.A. History</p>
+              <div><h4>Bachelor's (B.A.)</h4></div>
+              <p>
+                <span id="school">University of Washington</span></br>
+                Seattle, WA</br>
+                <span id="major">B.A. History</span>
+              </p>
             </div>
           </div>
         </div>
       </section>
       <section class="hidden">
-        <h1>Skills and Experience</h1>
+        <h1>Technical Experience</h1>
         <div class="container">
           <div class="skill-box">
             <h3>Languages</h3>
-            <ul>
-              <li>Javascript/ES6+</li>
-              <li>Node.js</li>
-              <li>HTML/CSS</li>
-              <li>Python</li>
-              <li>C++</li>
-            </ul>
+            <p>
+              <a>Javascript/ES6+</a>
+              <a>Node.js</a>
+              <a>HTML/CSS</a>
+              <a>Python</a>
+              <a>C++</a>
+            </p>
           </div>
           <div class="skill-box">
             <h3>Libraries and Frameworks</h3>
@@ -262,9 +279,6 @@
         </div>
       </section>
     </main>
-    <footer>
-      <p>&copy 2020 - Kris</p>
-    </footer>
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
