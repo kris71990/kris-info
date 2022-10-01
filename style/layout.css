@@ -7,18 +7,23 @@
   }
 }
 
-ul {
+/* ul {
   padding: 0;
   margin: 1% 5%;
-}å
+} */
 
 main li {
-  list-style: none;
+  /* list-style: none; */
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+h1 {
+  text-align: center;
+  padding-left: 2%;
 }
 
 a:hover {
@@ -35,6 +40,10 @@ a:hover {
   margin: 3%;
 }
 
+.homepage {
+  text-align: center;
+}
+
 .homepage h1 {
   margin: 3%;
 }
@@ -44,8 +53,7 @@ a:hover {
 }
 
 .homepage img {
-  width: 35%;
-  border-radius: 50%;
+  border-radius: 35%;
 }
 
 .hidden {
@@ -66,24 +74,23 @@ main .container {
   width: 100%;
   flex-wrap: wrap;
   overflow-wrap: break-word;
+  padding-bottom: 20px;
 }
 
 .skill-box {
+  font-family: 'Merriweather', serif;
   width: 80%;
-  margin: 1% auto;
-  /* padding: 2%; */
+  margin: 2px auto;
+  padding-left: 2%;
   background-color: #3B6E85;
-  /* border: 5px double #B7D4DA; */
 }
 
 .skill-box h3 {
-  font-family: 'Bree Serif', serif;
   text-decoration: underline;
 }
 
 .skill-box li {
-  font-family: 'Slabo 27px', serif;
-  margin: 5px;
+  list-style-position: inside;
 }
 
 .education {
@@ -124,16 +131,17 @@ main .container {
 
 .about {
   text-align: left;
-}
-
-.about h1 {
-  text-align: center;
-  padding-left: 2%;
+  line-height: 1.5em;
 }
 
 .about div {
   width: 90%;
   margin: 0 auto;
+}
+
+.about img {
+  width: 100%;
+  margin: 20px 0;
 }
 
 #language-selection li {
@@ -243,6 +251,11 @@ main .container {
   .about h1 {
     text-align: left;
     margin-bottom: 50px;
+  }
+
+  .skill-box {
+    width: 50%;
+    line-height: 1.5em;
   }
   
   .education .container div {

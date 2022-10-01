@@ -10,7 +10,6 @@ body {
 main {
   background-color: #64969F;
   flex: 1 0 auto;
-  text-align: center;
   font-family: 'Merriweather', serif;
   padding-top: 50px;
 }
@@ -32,6 +31,11 @@ header {
   border-bottom: 5px double #B7D4DA;
 }
 
+header img {
+  height: 35px;
+  border-radius: 25px;
+}
+
 nav {
   line-height: 1.2em;
   width: 100%;
@@ -42,10 +46,14 @@ nav ul {
   height: 100%;
 }
 
+nav ul span {
+  align-self: flex-end;
+}
+
 nav ul li {
   display: inline-block;
   align-self: flex-end;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 nav p {
