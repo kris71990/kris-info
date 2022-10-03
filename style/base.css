@@ -8,7 +8,9 @@ body {
 }
 
 main {
-  background-color: #64969F;
+  /* width: 80%;
+  margin: 0 auto; */
+  background-color: #BCD3D7;
   flex: 1 0 auto;
   font-family: 'Merriweather', serif;
   padding-top: 50px;
@@ -53,7 +55,7 @@ nav ul span {
 nav ul li {
   display: inline-block;
   align-self: flex-end;
-  padding-right: 30px;
+  padding-right: 5%;
 }
 
 nav p {
