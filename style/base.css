@@ -8,8 +8,6 @@ body {
 }
 
 main {
-  /* width: 80%;
-  margin: 0 auto; */
   background-color: #BCD3D7;
   flex: 1 0 auto;
   font-family: 'Merriweather', serif;
@@ -38,11 +36,6 @@ header img {
   border-radius: 25px;
 }
 
-nav {
-  line-height: 1.2em;
-  width: 100%;
-}
-
 nav ul {
   display: flex;
   height: 100%;
@@ -68,7 +61,7 @@ nav p {
 }
 
 .icons {
-  width: 50%;
+  width: 40%;
   text-align: right;
   font-style: italic;
   letter-spacing: 0.1em;
@@ -82,4 +75,25 @@ nav p {
   vertical-align: middle;
   font-size: 1.3em;
   margin-left: 1%;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .icons {
+    display: inline-block;
+    width: 45%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  nav ul li {
+    align-self: flex-start;
+  }
 }

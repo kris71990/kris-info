@@ -26,7 +26,7 @@ a:hover {
   color: #476B71;
 }
 
-.about a:hover {
+.about a:hover, #language-selection a:hover {
   color: white;
   cursor: pointer;
 }
@@ -55,7 +55,7 @@ a:hover {
 
 .homepage img {
   width: 40%;
-  border-radius: 35%;
+  border-radius: 50%;
 }
 
 .hidden {
@@ -171,8 +171,18 @@ main .container {
 
 #language-selection li {
   font-family: 'Slabo 27px', serif;
+  font-weight: bold;
   display: inline;
-  margin: 3%;
+  margin: 2%;
+}
+
+#language-selection li a {
+  color: #022956;
+}
+
+#language-selection .selected {
+  border-bottom: 2px solid #92B4C2;
+  color: #92B4C2;
 }
 
 #project-view {
@@ -181,17 +191,13 @@ main .container {
   letter-spacing: 0.01em;
 }
 
-/* .javascript, .python, .c {
-  display: flex;
-  flex-direction: column; 
-} */
-
 .project-box {
   width: 95%;
   margin: 0 auto;
   padding: 2% 2% 10% 2%;
   text-align: left;
   position: relative;
+  background-color: #92B4C2;
 }
 
 .project-box h4 {
@@ -218,6 +224,11 @@ main .container {
 .project-box div a {
   margin-right: 10px;
   font-size: 75%;
+  color: #022956;
+}
+
+.project-box a:hover {
+  color: white;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -236,35 +247,12 @@ main .container {
     width: 90%;
   }
 
-  .javascript .project-box:nth-child(2n) {
-    background-color: #518D93;
+  .project-box:nth-child(2n) {
+    background-color: #92B4C2;
   }
   
-  .javascript .project-box:nth-child(2n + 1) {
-    background-color: #2B7981;
-  }
-  
-  .python .project-box:nth-child(n) {
-    background-color: #518D93;
-  }
-  
-  .python .project-box:nth-child(2n) {
-    background-color: #2B7981;
-  }
-  
-  .c .project-box:nth-child(n) {
-    background-color: #518D93;
-  }
-
-  .c .project-box:nth-child(2n) {
-    background-color: #2B7981;
-  }
-
-  .c .project-box:last-child {
-    border-bottom: none;
-  }
-  #project-view .visible .project-box:last-child {
-    border-bottom: none;
+  .project-box:nth-child(2n + 1) {
+    background-color: #5B8699;
   }
 }
 
@@ -324,7 +312,7 @@ main .container {
 
   .project-box {
     width: 20%;
-    background-color: #92B4C2;
+    border-radius: 10px;
   }
 
   .project-box p {

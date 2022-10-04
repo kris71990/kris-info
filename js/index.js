@@ -48,12 +48,20 @@
   
     if (targetLang === 'c/c++') targetLang = 'c';
 
+    langChoicesA.forEach((choice) => {
+      if (choice.textContent === e.target.textContent) {
+        choice.classList.add('selected')
+      } else {
+        choice.classList.remove('selected')
+      }
+    })
+
     projectDivs.forEach((project) => {
       let classes = project.classList;
 
       if (targetLang === 'all') {
-        langChoicesLi[0].className = 'selected';
-        classes.add('visible');
+        classes.remove('hidden')
+        classes.remove('visible');
         return;
       }
 
