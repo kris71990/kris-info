@@ -1,27 +1,15 @@
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+/* Mobile First */
 
-a {
-  text-decoration: none;
-  color: white;
-}
+/* COLORS 
+about-link: #476B71
+education-underline: #36646E
+skill-box: #92B4C2
+skill-box-mobile: #92B4C2/#5B8699
+language-selection/project-title/Github link: #022956
+language-selected: #92B4C2;
+*/
 
-h1 {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-a:hover {
-  color: white;
-  cursor: pointer;
-}
-
+/* About and Education */
 .about a {
   color: #476B71;
 }
@@ -29,128 +17,6 @@ a:hover {
 .about a:hover, #language-selection a:hover {
   color: white;
   cursor: pointer;
-}
-
-.selected a {
-  color: white;
-  border-bottom: 2px solid #B7D4DA;
-}
-
-#subtitle {
-  margin-top: 3%;
-}
-
-.homepage {
-  text-align: center;
-}
-
-.homepage h1 {
-  margin-bottom: 3%;
-  padding-left: 0;
-}
-
-.homepage #subtitle * {
-  margin: 5px;
-}
-
-.homepage img {
-  width: 40%;
-  border-radius: 50%;
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-  animation-name: fadein;
-  animation-duration: 2s;
-}
-
-header .container {
-  margin: 1%;
-}
-
-main .container {
-  flex-wrap: wrap;
-  overflow-wrap: break-word;
-  padding-bottom: 20px;
-}
-
-.page {
-  display: flex;
-  align-items: center;
-}
-
-.experience {
-  width: 80%;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.general {
-  font-family: 'Merriweather', serif;
-  border-radius: 20px;
-  width: 65%;
-  margin: 0 auto;
-  padding: 1% 5%;
-  text-align: center;
-  background-color: #92B4C2;
-}
-
-.general h3 {
-  text-decoration: underline;
-}
-
-.skill-box {
-  font-family: 'Merriweather', serif;
-  border-radius: 20px;
-  width: 80%;
-  margin: 2% auto;
-  padding: 2% 5%;
-  background-color: #92B4C2;
-  height: 250px;
-  line-height: 1.5em;
-}
-
-.skill-box li {
-  list-style-position: inside;
-}
-
-.education {
-  width: 90%;
-  height: 100%;
-  margin: 2% auto;
-}
-
-.education .container div {
-  width: 100%;
-  padding: 0 3%;
-  border-bottom: 2px solid #36646E;
-}
-
-.education .container div h4 {
-  line-height: 0em;
-}
-
-.education .container p {
-  width: 100%;
-  line-height: 1.5em;
-}
-
-.education .container #school {
-  font-style: normal;
-  font-weight: bold;
-}
-
-.education .container #major {
-  font-style: italic;
-}
-
-.about {
-  text-align: left;
-  line-height: 1.5em;
 }
 
 .about div {
@@ -163,15 +29,85 @@ main .container {
   margin: 20px 0;
 }
 
+.education {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.education h4 {
+  line-height: 3em;
+  border-bottom: 2px solid #36646E;
+}
+
+.education p {
+  line-height: 2em;
+  padding-left: 20px;
+}
+
+.education .container {
+  padding-bottom: 0;
+}
+
+.education .container #school {
+  font-style: normal;
+  font-weight: bold;
+}
+
+.education .container #major {
+  font-style: italic;
+}
+
+/* Experience */
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.general {
+  font-family: 'Merriweather', serif;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #92B4C2;
+}
+
+.general h3 {
+  text-decoration: underline;
+}
+
+.experience .left, .experience .right {
+  width: 90%;
+}
+
+.skill-box {
+  font-family: 'Merriweather', serif;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #92B4C2;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: flex-start;
+}
+
+.skill-box ul {
+  padding-left: 5px;
+}
+
+.skill-box li {
+  padding: 2px;
+  list-style-position: inside;
+}
+
+/* Projects */
 #language-selection {
-  list-style-type: none;
   padding: 0;
   text-align: center;
 }
 
 #language-selection li {
-  font-family: 'Slabo 27px', serif;
-  font-weight: bold;
   display: inline;
   margin: 2%;
 }
@@ -186,44 +122,31 @@ main .container {
 }
 
 #project-view {
-  width: 90%;
-  margin: 2% auto;
-  letter-spacing: 0.01em;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-box {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
-  padding: 2% 2% 10% 2%;
-  text-align: left;
-  position: relative;
-  background-color: #92B4C2;
+  padding: 5%;
 }
 
 .project-box h4 {
+  margin: 0 0 20px 0;
   font-family: 'Bree Serif', serif;
   text-decoration: underline;
   color: #022956;
 }
 
 .project-box h5 {
-  font-family: 'Slabo 27px', serif;
+  margin: 5px 0;
   font-style: oblique;
 }
 
-.project-box p {
-  font-family: 'Slabo 27px', serif;
-  margin: 0;
-}
-
-.project-box div {
-  position: absolute;
-  bottom: 5px;
-}
-
-.project-box div a {
-  margin-right: 10px;
-  font-size: 75%;
+.project-box a {
   color: #022956;
 }
 
@@ -231,36 +154,17 @@ main .container {
   color: white;
 }
 
-@media only screen and (max-width: 1000px) {
-  .experience {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .general {
-    width: 70%;
-    line-height: normal;
-  }
-  
-  .experience .left, .experience .right {
-    width: 90%;
-  }
-
-  .project-box:nth-child(2n) {
-    background-color: #92B4C2;
-  }
-  
-  .project-box:nth-child(2n + 1) {
-    background-color: #5B8699;
-  }
+.project-box:nth-child(2n) {
+  background-color: #92B4C2;
 }
 
-@media only screen and (min-width: 1000px) {
-  .homepage img {
-    width: 20%;
-  }
+.project-box:nth-child(2n + 1) {
+  background-color: #BED8E3;
+}
 
+/* Desktop */
+@media only screen and (min-width: 800px) {
+  /* About and Education */
   .education {
     width: 40%;
     margin: 0;
@@ -277,28 +181,48 @@ main .container {
     margin-bottom: 50px;
   }
 
+  .page {
+    display: flex;
+  }
+
+  /* Experience */
+  .general {
+    width: 80%;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .experience .left, .experience .right {
     width: 40%;
-  }
-  
-  .education .container div {
-    width: 100%;
-    border-bottom: 2px solid #36646E;
+    margin: 20px;
   }
 
-  .education .container p {
-    width: 100%;
-    text-align: left;
-    line-height: 2em;
-    margin: 2%;
-    padding-left: 6%;
+  .skill-box {
+    height: 300px;
   }
 
+  .education .container {
+    padding-bottom: 10px;
+  }
+
+  /* Projects */
   #project-view {
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: stretch;
+  }
+
+  #project-view .project-box {
+    flex-grow: 1;
+    background-color: #92B4C2;
+    width: 20%;
+    border-radius: 10px;
+    padding: 30px;
   }
 
   .javascript, .c, .python {
@@ -308,14 +232,5 @@ main .container {
   .python, .c {
     width: 20%;
     margin: 3px;
-  }
-
-  .project-box {
-    width: 20%;
-    border-radius: 10px;
-  }
-
-  .project-box p {
-    padding-bottom: 2%;
   }
 }
